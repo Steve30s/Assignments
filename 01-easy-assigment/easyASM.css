@@ -1,0 +1,47 @@
+body{
+	width: 960px;
+	font-family: 'Arial', 'Helvetica' Neue, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: #777;
+	content: #ebebeb;
+
+}
+
+header, 
+nav, 
+section, 
+aside,
+footer {
+	/*display: block;*/
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	background-color: #ebebeb;
+}
+
+section{
+	/*display: block;*/
+	float: left;
+	width: 495px;
+	height: 267px;
+	overflow: auto;
+
+}
+aside{
+	/*display: block;*/
+	float: right;
+	width: 40%;
+	height: 267px;
+	overflow: auto;
+}
+.clear{
+	clear: both;
+}
+h1, p{
+width: 90%;
+padding: 10px;
+margin: 10px;
+color: #777;
+text-align: center;
+background: #ebebeb;
+}
