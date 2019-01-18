@@ -175,8 +175,36 @@
 
 		<span class="be-block">A display property with a value of "block" resuls in</span><span class="be-block">a line break between the two elements.</span>
 
+		<p>The following example display <code class="w3-codespan"> < a ></code> element as block elemets:</p>
 
+		<div id="a-block">
+			<a href="">HTML</a>
+			<a href="">CSS</a>
+			<a href="">JAVASCRIPT</a>
+		</div>
 
+		<br>
+
+<h1>CSS Layout - width and max-width</h1>
+
+<h2>Using width, max-width and margin: auto;</h2>
+
+<p>As metioned in the previus chapter; a block-level element always takes up the full width available (streches out the eft and right as far as it can).</p>
+
+<p>seting the <code class="w3-codespan"> width</code> of a block element-level will revent it from streching out to the dges of its container. Then, you can set the margins to auto, to horinzontly center the element within its container. The element will take up the spcecified width, and the remaining space will be split equally between the two margins.</p>
+
+<div class="w3-theme-border" style="border-width: 3px; border-style: solid; width: 500px; margin: auto;"  >
+	this < div > element has a width of 500px, and margin set to auto.
+</div>
+<br>
+<p><strong>Nothe:</strong> the problem with this div above occurs when the borwser window is smaller than the width of the element. The browser then adds a horisontal scrollbar to the page.</p>
+<p>using <code class="w3-codespan"> max-width</code> instead, in this situation, will imporve the borwser's handling of small windows. This is important when making site usable on small devices: </p>
+
+<div class="w3-theme-border" style="border-width: 3px; border-style: solid; max-width: 500px; margin: auto;"  >
+	this < div > element has a max-width of 500px, and margin set to auto.
+</div>
+
+<h1></h1>
 
 </body>
 </html>

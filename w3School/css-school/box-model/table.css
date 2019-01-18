@@ -78,3 +78,11 @@ tr:nth-child(odd) {
 .be-block{
 	display: block;
 }
+#a-block a{
+	display: block;
+	text-decoration: none;
+}
+
+.w3-theme-border {
+	border-color: green !important;
+}
