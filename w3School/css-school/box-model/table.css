@@ -1,0 +1,80 @@
+table#costumer{
+	font-size: 16px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+tbody{
+	display: table-row-group;
+	vertical-align: center;
+	border-color: inherit;
+}
+tr{
+	display: table-row;
+	vertical-align: inherit;
+	border-collapse: inherit;
+	background-color: lightgrey;
+}
+/*tr:hover{
+	background-color: black;
+}*/
+/*tr:nth-child(even) {
+	background-color: brown;
+}
+tr:nth-child(odd) {
+	background-color: yellow;
+}*/
+
+#costumer th{
+	padding-top: 10px;
+	padding-bottom: 11px;
+	background-color: green;
+	color: white;
+}
+#costumer td,
+#costumer th{
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 8px;
+}
+
+.alt{
+	background-color: white;
+}
+
+/*points table*/
+#pints-table{
+	border-collapse: collapse;
+	width: 100%;
+
+}
+#pints-table th, td{
+	text-align: left;
+	padding: 8px;
+}
+#pints-table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+.w3-codespan {
+	background-color: #f1f1f1;
+	color:crimson;
+}
+#inline-menu li{
+	display: inline;
+}
+
+/*important */
+.important {
+	width: 500px;
+	height: auto;
+	background-color: #fafad2;
+	border-left: 6px solid #ffd700;
+	padding: 10px 10px 10px 20px;
+	font-weight: 300;
+	font-size: 16px;
+}
+.be-block{
+	display: block;
+}

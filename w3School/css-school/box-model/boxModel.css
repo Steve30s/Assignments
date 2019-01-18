@@ -180,9 +180,23 @@ a:active {
 	background-color: red;
 	color: white;
 }
-
-
-
+ul.a{
+	list-style-position: inside;
+	background: #ff9999;
+	padding: 20px;
+}
+ol {
+	background: #ff9999;
+	padding: 20px;
+}
+ol li {
+	background: #ffe5e5;
+	padding: 5px;
+	margin-left: 35px;
+}
+ul li {
+	background: #cce5ff;
+}
 
 
 

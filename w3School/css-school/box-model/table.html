@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+</head>
+<body>
+	<table id="costumer">
+		<tbody>
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+			</tr>
+			<tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+			</tr>
+			<tr class="alt">
+				<td>Berlingo</td>
+				<td>Cristina bergunds</td>
+				<td>Sweeden</td>
+
+			</tr>
+			<tr>
+				<td>Apple</td>
+				<td>Tim Cook</td>
+				<td>USA</td>
+			</tr>
+			<tr class="alt">
+				<td>Google</td>
+				<td>Indian Guy</td>
+				<td>Cupertino</td>
+	
+			</tr>
+
+			<tr>
+				<td>Avon</td>
+				<td>Luis Pivoti</td>
+				<td>Brazil</td>
+
+			</tr>
+			<tr class="alt">
+				<td>Ricona Do agrest</td>
+				<td>POrque nao </td>
+				<td>Sai pra la</td>
+
+			</tr>
+			<tr>
+				<td>Ricona Do agrest</td>
+				<td>POrque nao </td>
+				<td>Sai pra la</td>
+			</tr>
+			<tr class="alt">
+				<td>Ricona Do agrest</td>
+				<td>POrque nao </td>
+				<td>Sai pra la</td>
+			</tr>
+
+		</tbody>
+	</table>
+	<br>
+	<table style="overflow-x:auto;" id="pints-table">
+		<tr>
+			<th>First name</th>
+			<th>Last Name</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+			<th>Points</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+		</tr>
+			<tr>
+			<td>Dam</td>
+			<td>Jhonson</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+			<td>94</td>
+		</tr>
+	</table>
+
+	<br>
+	<h1>Block Level element</h1>
+	<p>A block level element alway starts on a new line and takes up the full wifth available (streches out to the left and right as far as it can).</p>
+
+	<p>Examples of block level element:</p>
+
+	<ul>
+		<li><code>< div ></code></li>
+		<li><code>< h1-h6 ></code></li>
+		<li><code>< p ></code></li>
+		<li><code>< form ></code></li>
+		<li><code>< header ></code></li>
+		<li><code>< footer ></code></li>
+		<li><code>< section ></code></li>
+	</ul>
+
+	<h1>Inline element</h1>
+	<p>an inlne element does not start on a new line and only takes up as much width as neccessary</p>
+
+	<p>examples: </p>
+	<ul>
+		<li><code>< span ></code></li>
+		<li><code>< a ></code></li>
+		<li><code>< img ></code></li>
+	</ul>
+
+	<h1>Display None</h1>
+	<p>
+	<code  class="w3-codespan">display:none</code> is commoly used with javascrip to hide and show elements without deleting and creating them.
+
+	the <code class="w3-codespan">script</code> element uses <code class="w3-codespan">display:none;</code> as default.
+	</p>
+
+	<h1>Override The Defualt Display Value</h1>
+	<p>As mentioned, every element has a default display value. However, you can override this.</p>
+	<p>Chinging an inline element to a block element, or vice versa, can be used to make the page look a specific way, and still follow the web standard.</p>
+	<p> A common example is making inline <code class="w3-codespan">< li ></code> elements for horizontal menus.</p>
+
+	<div id="inline-menu">
+		<ul>
+			<a href="#"><li>HTML</li></a>
+			<a href="#"><li>CSS</li></a>
+			<a href="#"><li>JAVASCRIT</li></a>
+		</ul>
+		
+	</div>
+
+	<div class="important">
+			<p><strong>Important:</strong> Setting the display property of an element only changes<strong> how the element is displayed</strong>. NOT what kind element is it. So, an inline element with <code class="w3-codespan">display:block;</code>  is nowt allowdd to have other bock element inside it.  </p>
+		</div>
+		<h1>examples:</h1>
+		<p>The following example displays <code class="w3-codespan">< span ></code> element as block elements.</p>
+
+		<span class="be-block">A display property with a value of "block" resuls in</span><span class="be-block">a line break between the two elements.</span>
+
+
+
+
+</body>
+</html>
