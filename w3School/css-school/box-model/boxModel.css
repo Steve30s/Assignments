@@ -1,0 +1,191 @@
+#second-section div{
+	background-color: lightgrey;
+	width: 300px;
+	border:25px solid green;
+	padding: 25px;
+	margin: 25px;
+}
+.important {
+	width: 500px;
+	height: auto;
+	background-color: #fafad2;
+	border-left: 6px solid #ffd700;
+	padding: 10px 10px 10px 20px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+#image-description{
+	width: 320px;
+	padding: 10px;
+	border: 5px solid grey;
+	margin:0;
+}
+#calculation{
+	line-height: 9px;
+	border: 1px solid green;
+	border-left: 8px solid green;
+	padding-left: 10px;
+}
+#fourth-section div {
+	border: 1px solid black;
+	padding: 20px;
+	outline: 10px solid green;
+}
+#fifthy-section div {
+	border: 1px solid gray;
+	padding: 8px; 
+}
+#fifthy-section h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #4CAF50;
+}
+#fifthy-section{
+	text-indent: 50px;
+	text-align: justify;
+	letter-spacing: 3px;
+}
+#text-decoration h1{
+	text-decoration-line: overline;
+	color: black;
+
+}
+#text-decoration h2{
+	text-decoration-line: line-through;
+}
+#text-decoration h3{
+	text-decoration-line: underline;
+}
+p.uppercase{
+	text-transform: uppercase;
+
+}
+p.lowercase{
+	text-transform: lowercase;
+
+}
+p.capitalize{
+	text-transform: capitalize;
+
+}
+#sixth-section h1{
+	text-shadow: 2px 2px red;
+}
+
+table.w3-table-all{
+	margin: 20px 0;
+}
+.w3-table-all{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+tr{
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+.w3-table-all th, .w3-table-all td{
+	padding: 8px 8px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: top;
+}
+.w3-table-all td{
+	background-color: lightgrey;
+
+}
+a{
+	color: inherit;
+}
+.txtlink1{
+	color: green;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 16px;	
+}
+.txtlink2{
+	color: green;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 16px;
+
+}
+.button1 {
+	background-color: white;
+	color: black;
+	border: 2px solid green;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.button1 a:hover{
+	background: green;
+}
+.button2{
+	 display: inline-block;
+    background-color: #f44336;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    opacity: 0.9;
+
+}
+p b a{
+	text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  text-decoration: none;
+  background-color: lightgreen;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+  background-color: lightgreen;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+
+}
+
+#buttonLink a:link, a:visited{
+	background-color: #f44336;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin:  50px;
+}
+#buttonLink a:hover, a:active{
+	background-color: red;
+	color: white;
+}
+
+
+
+
+
+
+
+
+

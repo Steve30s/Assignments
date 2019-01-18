@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box-Model</title>
+	<link rel="stylesheet" type="text/css" href="boxModel.css">
+
+	<!-- font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap glyphicon -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<header class="master-head">
+		<h1>Box_model</h1>
+		<nav>
+		
+		</nav>
+	</header>
+
+	<section class="main-section">
+		<div class="container">
+			<h2>The css Box-model</h2>
+			<p>All HTML element can be considered as boxes. In Css, the term "Box-model" is used when talking about design and layout.</p>
+			<p>The css box model is essentially a box that wraps aroud every html element. it consist of: margins, borders, padding and the actual content.</p>
+
+			<i>Explanation of the part</i>
+			<ul>
+				<li><strong>Content</strong> - the content of the box, where text and images appear</li>
+				<li><strong>Padding</strong> - Clears an area around the content. the padding is transparent</li>
+				<li><strong>Border</strong> - A border that goes around the padding and content</li>
+				<li><strong>Margin</strong> - CLears an area outside the border. The margin is transparent</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<section id="second-section">
+		<h1>Demonstrating the box model</h1>
+		<p>The Css box model is essentially a box that wraps around every HTML. it consist of: padding, margins, boarder, and the ctual content</p>
+		
+		<div>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			
+		</div>
+	</section>
+	<section id="third-section">
+		<h1>Width anf height of an element</h1>
+		<p>In order to set the width and height of element correctly in all browsers, you neeed to knnow how the model works </p>
+
+		<div class="important">
+			<p><strong>Important:</strong> when you set the width and height property of an element with css, you just set the width and heigh of the <strong>content area</strong>. To calculate the full size of an element, you must also add padding, borders, and margins. </p>
+		</div>
+
+		<h3><i>Exmaple:</i></h3>
+		<img src="klematis4_big.jpg" width="350" height="263" alt="klematis">
+		<div id="image-description">
+			The picture above is 350px wide. The total width of this element is also 350px.
+			
+		</div>
+		<p>here is the calculation</p>
+
+		<div id="calculation">
+			<p>320px (width)</p>
+			<p>+ 20px (left + right pading)</p>
+			<p> + 10 px (left + right border)</p><p><strong>= 350px</strong></p>
+			
+		</div>
+		
+	</section>
+	<section id="fourth-section">
+		<h2>Css outline</h2>
+		<div>
+			This element has boarder and a green outline with a didth of 10px.
+		</div>
+	</section>
+	<section id="fifthy-section">
+		<h1>Css text</h1>
+		<div>
+		<h1>text formatting</h1>
+		<p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored</p>
+  </div>
+
+  <p>When the <strong>text-align</strong>property is set to 'justify', ech line is streched so that every line has equak width, and the left and right margins are straigh (line in magazines and newspapers):</p>
+
+  <div id="text-decoration">
+  	<h1>This is a heading 1</h1>
+  	<h2>This is a heading 2</h2>
+  	<h3>Ths is a heading 3</h3>
+  	<p class="uppercase">this is some text</p>
+  	<p class="lowercase">this is some text</p>
+  	<p class="capitalize">this is some text</p>
+  	
+  </div>
+	</section>
+
+	<section id="sixth-section" >
+		<h1>text Color</h1>
+
+	</section>
+
+	<section sevend-section>
+		<h1>Css Fonts Family</h1>
+		<p>In css tere are two types of font-famly names:</p>
+
+		<ul>
+			<li><strong>Generic Family</strong> - A group of font families with a similar lool(like "Serif" or "Monospace")</li>
+			<li><strong>Font-Faamily</strong> - a specific font family liek ("Times New Roman" or Arial)</li>
+		</ul>
+
+		<table class="w3-table-all">
+			<tbody>
+				<tr>
+					<th style="width: 20%">Generic Family</th>
+					<th style="width: 30%">Font-family</th>
+					<th>description</th>
+				</tr>
+				<tr>
+					<td>Serif</td>
+					<td>
+						<span style="font-size: 150%; font-family: Times New Roman">Times new Roman
+						</span>
+						<br>
+						<span style="font-size: 150%; font-family: Georgia">Geogia</span>
+					</td>
+					<td>Serif fonts have small lines at the end on some characters</td>
+				</tr>
+				<tr>
+					<td>Sans-Serif</td>
+					<td>
+						<span style="font-size: 150%;font-family: Arial">Arial</span>
+						<br>
+						<span style="font-size: 150%; font-family: Verdana"></span>
+					</td>
+					<td>"'sans' means without - these fonts do not have the lines at the ned of he character"</td>
+
+				</tr>
+				<tr>
+					<td>Monospcace</td>
+					<td><span style="font-size: 150%;font-family: Courier New">Courier New</span>
+						<br>
+						<spans style='font-size: 150%; font-family: Lucida COnsole' >Lucida Console</span></td>
+					<td></td>
+				</tr>
+
+			</tbody>
+			
+		</table>
+		<div class="important">
+			<strong>Note:</strong> On computer screens ,sans-serif fonts are considered easier to read than serif-fonts.
+		</div>
+		
+	</section>
+	<section id="eighth-section">
+		<h1>Css Icons</h1>
+		<h1>How to add icons </h1>
+		<p>The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.</p>
+		<p>Add the name of the specifid icon class to any inline html like i tag or span tag</p>
+		<p>All icons in the icon library below are scalable vector, that can be customized with css (size, color, shadow etc)</p>
+
+		<h1>Font awesome icons</h1>
+		<p>to use the Font awesome icons, add the following  lne inside of the <code>head</code></p>
+
+	<p>
+	<code class="w3-codespan">
+
+		&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+	</code>
+	</p>
+		<div id="font-awesome">
+			<i class="fa fa-cloud"></i>
+			<i class="fa fa-heart"></i>
+			<i class="fa fa-car"></i>
+			<i class="fa fa-file"></i>
+			<i class="fa fa-bars"></i>
+		</div>	
+
+		<h1>Bootstrap Icons</h1>
+		<p>to use the Bootstrap plyphicons, add the following inside inside the <code>head</code> section of the your HTML page</p>
+		<p><code class="w3-codespan">&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;</code></p>
+
+		<i class="glyphicon glyphicon-cloud"></i>
+		<i class="glyphicon glyphicon-remove"></i>
+		<i class="glyphicon glyphicon-user"></i>
+		<i class="glyphicon glyphicon-envelope"></i>
+		<i class="glyphicon glyphicon-thumbs-up"></i>
+		
+	</section>
+	<section id="ninth-section">
+		<h1>Css- links</h1>
+		<p>With css, links can be styled in a different way</p>
+
+		<a href="#" class="txtlink1">Text link</a>
+		<a href="#" class="txtlink2">Text link</a>
+		<a href="#" class="button1">Link Button</a>
+		<a href="#" class="button2">lLink Button</a>
+		<br>
+
+		<p>In addition, links can be styled differently depending on the what <strong>state </strong>they are in</p>
+
+		<p>The four link states are:</p>
+		<ul>
+			<li>
+				<code>a:link</code>
+				"- a normal,, unvisited link"
+			</li>
+			<li>
+				<code>a:visited</code>
+				"- a link the user has visited"
+			</li>
+			<li>
+				<code>a:hover</code>
+				"- a link when the user mouses over it"
+			</li>
+			<li>
+				<code>a:active</code>
+				"- a link the moment it is clicked"
+			</li>
+		</ul>
+		
+		<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+
+<div id="buttonLink">
+	<a href="">Button</a>
+	
+</div>
+		
+	</section>
+
+
+
+
+
+</body>
+</html>
