@@ -204,7 +204,58 @@
 	this < div > element has a max-width of 500px, and margin set to auto.
 </div>
 
-<h1></h1>
+<h1>CSS Layout - The Position Property</h1>
+<p>The <code class="w3-codespan">positon</code> property specify the type of position method used for an element (static, relative, fixed, absolute or sticky).</p>
+<p>There are five position values:</p>
+<ul>
+	<li><code class="w3-codespan">static</code></li>
+	<li><code class="w3-codespan">relative</code></li>
+	<li><code class="w3-codespan">fixed</code></li>
+	<li><code class="w3-codespan">absolute</code></li>
+	<li><code class="w3-codespan">sticky</code></li>
+</ul>
+<p>Elements are then positoned using the top, bottom, left , and rigthproperties. However, these properties will not work unless the <code class="w3-codespan"> positon </code> property is set first. They also work differently depending on the position value</p>
+
+<h3>Position : static;</h3>
+<p>HTML elements are by default</p>
+
+<p>Static positioned elements are not afffected by the top, bottom, left, and right properties.</p>
+
+<p>An element with <code class="w3-codespan"> positioned : static;</code> is not positioned in any special way it is always positioned according to the normal flow  of the page:</p>
+
+<div style="border-width: 3px; border-style: solid; position: static; border-color: green;">
+	This div has a position element has a position : static;
+</div>
+
+<h3>Position : relative;</h3>
+<p>An element with <code class="w3-codespan"> position: relative;</code> is positioned relative to its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+<div style="border-width: 3px; border-style: solid; position: relative; border-color: green; left: 30px;">
+	This div has a position element has a position : static;
+</div>
+<h3>position: fixed;</h3>
+<p>An element wit <code class="w3-codespan"> position: fxed;</code> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are is used to position the element.</p>
+
+<p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+
+<div class="fixed">
+	this element has position fixed.
+	
+</div>
+<h3>Position Absolute</h3>
+<p>An element with <code class="w3-codespan">position: absolute;</code> is positioned relative to the nearest positoned ancestor (instead of positioned relative the viewport, like fixed)</p>
+<p>Hoever; if an absolute positioned element has no position ancestors, it uses the document body, moves along with the page scrolling</p>
+
+<p><strong>Note:</strong>A "positoned" element is one whose postion is anything except <code class="w3-codespan"></code>static</p>
+
+<div style="border-width: 3px; border-style: solid; position: relative; width: 400px; height: 200px; border-color: red;">
+	<div style="border-width: 3px; border-style: solid; position: absolute; width: 300px; height: 100px; top: 80px; right: 1px; border-color: green;">
+		
+	</div>
+</div>
+<h3>position: scticky;</h3>
+<p>An element with <code class="w3-codespan">position: sticky;</code> is positioned based on the user's  scroll position.</p>
+
+<p>A sticky element toggles between <code class="w3-codespan">relative</code> and <code class="w3-codespan"> fixed</code>, depending on the scroll positon. It is posioned relative until a given offset position inthe viewport - then ot ' sticks' in  place (like positon : fixed)</p>
 
 </body>
 </html>

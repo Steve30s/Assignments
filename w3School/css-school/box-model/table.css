@@ -86,3 +86,11 @@ tr:nth-child(odd) {
 .w3-theme-border {
 	border-color: green !important;
 }
+
+div.fixed{
+	position: fixed;
+	bottom: 200px;
+	right: 0;
+	width: 300px;
+	border: 3px solid green;
+}
