@@ -101,3 +101,42 @@ div.fixed{
 	top: 0;
 	z-index: -1
 }
+.thisContainer{
+	position: relative;
+}
+#text-left{
+	position: absolute;
+	top: 8px;
+	left: 40px;
+	font-size: 38px;
+	color: red; 
+}
+
+#thisImage{
+	width: 100%;
+	height: auto;
+	opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
