@@ -256,6 +256,23 @@
 <p>An element with <code class="w3-codespan">position: sticky;</code> is positioned based on the user's  scroll position.</p>
 
 <p>A sticky element toggles between <code class="w3-codespan">relative</code> and <code class="w3-codespan"> fixed</code>, depending on the scroll positon. It is posioned relative until a given offset position inthe viewport - then ot ' sticks' in  place (like positon : fixed)</p>
+<h3>Overlaping Elements</h3>
+<p>When elements are positioned, they can overlap other elements</p>
+
+<p>The <code class="w3-codespan">z-index</code> property specify the stack other of an element (which element should be placed in front of, or behind, the others)</p>
+
+<p>An element can have a positive or negative stack order:</p>
+
+<h1>This is a heading</h1>
+<img id="litle-img" src="icons-8.png" width="100" height="140">
+<p>Because the imagine has a z-indx of -1 it will </p>
+
+<p>An element with greater order is always in front of an element with a lower stack order.</p>
+
+<div class="important">
+			<p><strong>Note:</strong> if two positoned elements overlap without a <code class="w3-codespan">z-index</code> specified, the element positioned last in the HTML code will shown on top </p>
+		</div>
+
 
 </body>
 </html>
