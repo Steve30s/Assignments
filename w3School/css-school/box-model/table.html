@@ -319,8 +319,60 @@
 	<li>left - The elements floats to the left of its container</li>
 	<li>right - The element floats to the right of its container</li>
 	<li>none - The element does not float( will be displayed just where it occurs in the text). the is default</li>
-	<li>inhirit - The element inherits the float value of its parent</li>
-	
+	<li>inhirit - The element inherits the float value of its parent</li>	
 </ul>
+<p>In ints simple use, float can be used to wrap text around images.</p>
+
+	<h3>Example - float: right;</h3>
+	<p>the following example specifies that an image should float to the <strong>right</strong> in an text</p>
+
+	<div id="floatRight">
+
+		<p>
+			<img id="pineapple" src="pineapple.jpg">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+	</div>
+
+	<h2>The clear property</h2>
+	<p>The <code class="w3-codespan">clear</code> property specidy what elementes can float besides the cleared element and on wich side.</p>
+	<p>The <code class="w3-codespan">clear</code> property can have one of the following values:</p>
+
+	<ul>
+		<li>none - Allows floating elements on both sides. this is default</li>
+		<li>left - no floating elements allowed in the left side</li>
+		<li>right - No floating elements on the right side</li>
+		<li>both - No floating elements on either left or the right side</li>
+		<li>inherit - The element inhertis the cleat vallue of its parents</li>
+
+	</ul>
+	<p>The most common way to use the clear property is after you have used a float on a elements</p>
+	<p>When clearing floats, you should match the clear to the left:  if an element is floated to the left, then you should clear to the left. You floated element will continue to float, but the cleared element will appear bellow it on the webpage</p>
+	<h3>The clear fix Hack</h3>
+	<p>If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container.</p>
+
+	<p>The <code class="w3-codespan">overflow: auto;</code> clearflix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The<strong> new, morden clearflix hack</strong> however, is safer to use, and the following code is used for most webpages:</p>
+
+	<p>In this elements the image is taller than the elements containing it, and it is floated, so it overflows outside of its container</p>
+
+	<div class="div">
+		<h2>Without clearfix</h2>
+		<img src="pineapple.jpg" class="img1" alt="pineapple" width="170" height="170">
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+
+	</div>
+	<p style="clear:right">Add the clearfix to the containing element to fix this problem:</p>
+
+	<div  class="clearfix div">
+		<h2>Without clearfix</h2>
+		<img src="pineapple.jpg" class="img2" alt="pineapple" width="170" height="170">
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+
+	</div>
+	<br>
+	
+
+	<div class="important">
+			<p>You will learn more about the <code class="w3-codespan">::after</code> pseudo-element in alter chapter</p>
+		</div>
 </body>
 </html>
