@@ -16,6 +16,79 @@
 		<div class="box box3">oi</div>
 				
 	</div>
+	<p>Note  that we also used the clearfix hack to take care of the layout flow, and tha add the boxsixing property to make sure that the box does'nt break due to extra padding. Try to remove this code property to make sure the box doesn't break to extra padding. Try to remove this code to see the effect. </p>
+
+	<div class="important">
+		<p>
+			<strong>What is boxsing</strong>
+		</p>
+
+		<p>You can easily create floatng boxes side by side, when  you add somethig that enlarges the width of each box(e.g padding or borders), the box will break. The<code class="w3-codespan">boxsizng</code> property allows us to include the padin and borfer in the box's total width ( and height), making sure that the padding stays inside of the box and that it does not break</p>
+		
+
+		<p></p>
+	</div>
+
+	<h2>Images Side By Side</h2>
+	<p>Float images side by side:</p>
+
+	<div class="clearfix">
+		<div class="img-container">
+			<img src="italy.jpg" alt="italy" style="width: 100%;">
+		</div>
+
+		<div class="img-container" >
+			<img src="img_forest.jpg" style="width: 100%;" alt="">
+		</div>
+
+		<div class="img-container">
+			<img src="img_mountains.jpg" style="width: 100%;" alt="mountains">
+		</div>
+		
+	</div>
+	<p>Note that we used the clearfix hack to take care of the layout flow, and that we add the boxsizing property to make sure the image conainer does not break due to xtra padding. </p>
+
+	<h2>Equal height boxes</h2>
+	<p>in the previuos example you learned how to float boxes side by side with an equal width. However, it is not easy to creat floating boxes with equa heights. A quick fix however, is to set the fixed height, like in the example below.</p>
+
+	<div class="clearfix2">
+		<div class="box-height">
+			<h2>box 1</h2>
+		 <p>Some content, some content, some content</p>	
+	</div>
+
+	<div class="box-height" style="background-color:#ccc">
+		<h2>Box 2</h2>
+		<p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+		
+	</div>
+</div>
+
+<p>
+	<strong>However, </strong> this is not very flexible. it is ok if you can guarantee that the box will always have the same amount of content in them.  But many times the content is not the same. If you try the example above on a mobile phone, you will see that the second's box content will be displayed outside of the box. this is where css3 flexbox comes in handy - as it can automatically streches boxes to be as the longest box.
+</p>
+
+
+<!-- flexbox -->
+<div class="flex-container">
+	<div class="box-flex">
+		Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.	
+	</div>
+
+	<div class="box-flex">
+		Box 2 - My height will follow Box 1.
+		
+	</div>
+	
+</div>
+<br>
+<div class="important">
+		the only problem with Flexbox is that it does not work in Internet Explore 10 or earlier versions. You can read more about the Flexbox Layout Module in later chapter
+	</div>
+
+
 
 </body>
 </html>
