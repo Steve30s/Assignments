@@ -1,0 +1,50 @@
+/*boxsizing*/
+*{
+	box-sizing: border-box;
+}
+
+/*clear fix*/
+.clearfix-container{
+	content: "";
+	clear: both;
+	display: table;
+}
+.header, .footer{
+	background-color: grey;
+	color: white;
+	padding: 15px;
+
+}
+
+.column{
+	float: left;
+	padding: 15px;
+}
+
+.menu {
+	width: 25%;
+
+}
+
+.content{
+	width: 75%;
+
+}
+
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li{
+	background-color: #1e90ff;
+	color: white;
+	padding: 8px;
+	margin-bottom: 8px; 
+
+}
+
+.menu li:hover{
+	background-color: #0099cc;
+}
+
