@@ -126,8 +126,13 @@
 <h1>CSS Layout - Horinzontal & vertical</h1>
 
 <h1>Center Align Elements</h1>
-<p>To horizontaly center a block element (like <code> < div > </code>)</p>
+<p>To horizontaly center a block element (like <code> < div > </code>), use <code class="w3-codespan"> margin: auto</code></p>
+<p>Setting the width of element will prevent it from steching out to the edges of its container.</p>
+<p>The element will then take up the specified width, and the remaining space will be split between the two margins:</p>
 
+<div class="center">
+	<p><b>Note:</b> Using margins:auto will not work in IE8, unless !DOCTYPE is declared.</p>
+</div>
 
 
 </body>
